@@ -1,5 +1,44 @@
 name: BanReport
-main: net.daboross.bukkitdev.banreport.BanReport
+main: net.daboross.bukkitdev.banreport.bukkit.BanReportBukkitMain
 version: 1.0
 author: Dabo Ross
 description: This plugin handles ban reports
+commands:
+   br:
+     description: This is the base command for Ban Report.
+     usage: /<command> [subcommand] Please Report it if this messages is displayed
+     aliases: [banreport, breport, banr]
+permissions:
+  playerdata.*:
+    description: Gives access to all PlayerData commands
+    children:
+      playerdata.help: true
+      playerdata.viewinfo: true
+      playerdata.list: true
+      playerdata.set: true
+      playerdata.admin: true
+    default: false
+  playerdata.help:
+    description: Allows you to use /pd ?
+    default: true
+  playerdata.viewinfo:
+    description: Allows you to view Player Data
+    default: true
+    children:
+      playerdata.help: true
+  playerdata.list:
+    description: Allows you to view Player Data
+    default: true
+    children:
+      playerdata.help: true
+  playerdata.admin:
+    description: PlayerData Admin
+    default: false
+    children:
+      playerdata.help: true
+  playerdata.firstjoinlist:
+    description: Allows you to list Player Data in order of first join
+    default: true
+    children:
+      playerdata.help: true
+    
