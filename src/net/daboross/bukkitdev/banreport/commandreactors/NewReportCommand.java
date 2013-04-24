@@ -1,6 +1,5 @@
 package net.daboross.bukkitdev.banreport.commandreactors;
 
-import net.daboross.bukkitdev.banreport.bukkit.BanReportBukkitMain;
 import net.daboross.bukkitdev.banreport.database.BanReportXMLDatabase;
 import net.daboross.bukkitdev.commandexecutorbase.CommandExecutorBase;
 import org.bukkit.command.Command;
