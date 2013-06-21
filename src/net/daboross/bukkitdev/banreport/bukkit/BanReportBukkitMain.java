@@ -8,11 +8,12 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class BanReportBukkitMain extends JavaPlugin {
 
-    private BanReportCommandExecutor mainReportCommandExecutor;
+    private BanReportCommandHandler commandHandler;
 
     @Override
     public void onEnable() {
-        mainReportCommandExecutor = new BanReportCommandExecutor();
+        commandHandler = new BanReportCommandHandler();
+        commandHandler.registerCommand(this);
     }
 
     @Override
