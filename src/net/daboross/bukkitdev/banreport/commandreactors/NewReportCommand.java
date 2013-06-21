@@ -1,8 +1,6 @@
 package net.daboross.bukkitdev.banreport.commandreactors;
 
 import net.daboross.bukkitdev.banreport.database.BanReportXMLDatabase;
-import net.daboross.bukkitdev.commandexecutorbase.CommandExecutorBase;
-import net.daboross.bukkitdev.commandexecutorbase.CommandExecutorBridge;
 import net.daboross.bukkitdev.commandexecutorbase.SubCommand;
 import net.daboross.bukkitdev.commandexecutorbase.SubCommandHandler;
 import org.bukkit.command.Command;
@@ -21,6 +19,6 @@ public class NewReportCommand implements SubCommandHandler {
     }
 
     @Override
-    public void runCommand(CommandSender sender, Command mainCommand, String baseCommandLabel, SubCommand subCommand, String subCommandLabel, String[] subCommandArgs, CommandExecutorBridge commandExecutorBridge) {
+    public void runCommand(CommandSender sender, Command baseCommand, String baseCommandLabel, SubCommand subCommand, String subCommandLabel, String[] subCommandArgs) {
     }
 }
