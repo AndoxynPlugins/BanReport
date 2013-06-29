@@ -6,7 +6,7 @@ description: This plugin handles ban reports
 commands:
    br:
      description: This is the base command for Ban Report.
-     usage: /<command> [subcommand] Please Report it if this messages is displayed
+     usage: /<command> [subcommand]
      aliases: [banreport, breport, banr]
 permissions:
   playerdata.*:
