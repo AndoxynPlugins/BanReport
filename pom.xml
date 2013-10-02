@@ -36,6 +36,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>bukkit-repo</id>
+            <url>http://repo.bukkit.org/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>repo-daboross-net</id>
+            <url>http://repo.daboross.net/</url>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
@@ -46,24 +56,19 @@
         </dependency>
         <dependency>
             <groupId>net.daboross.bukkitdev</groupId>
-            <artifactId>CommandExecutorBase</artifactId>
+            <artifactId>command-executor-base</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>net.daboross.dxml</groupId>
-            <artifactId>DXMLLibrary</artifactId>
+            <artifactId>libdxml</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>
-    <repositories>
-        <repository>
-            <id>bukkit-repo</id>
-            <url>http://repo.bukkit.org/content/groups/public</url>
-        </repository>
-    </repositories>
 
     <build>
         <finalName>${project.name}</finalName>
+        <defaultGoal>clean package</defaultGoal>
         <resources>
             <resource>
                 <directory>${project.basedir}/src/main/resources</directory>
@@ -85,6 +90,7 @@
             </plugin>
         </plugins>
     </build>
+
     <issueManagement>
         <url>https://github.com/daboross/BanReport/issues</url>
         <system>Github Issues</system>
